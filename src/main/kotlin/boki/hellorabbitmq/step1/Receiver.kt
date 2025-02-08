@@ -1,4 +1,4 @@
-package boki.hellorabbitmq.step0
+package boki.hellorabbitmq.step1
 
 import org.springframework.stereotype.Component
 

@@ -1,4 +1,4 @@
-package boki.hellorabbitmq.step0
+package boki.hellorabbitmq.step1
 
 import org.springframework.amqp.core.Queue
 import org.springframework.amqp.rabbit.connection.ConnectionFactory
