@@ -21,4 +21,9 @@ class LogConsumer {
         println("[INFO] received: $message")
     }
 
+    @RabbitListener(queues = [RabbitMQConfig.ALL_LOG_QUEUE])
+    fun consumeAllLog(message: String) {
+        println("[ALL LOG] received: $message")
+    }
+
 }
