@@ -1,4 +1,4 @@
-package boki.hellorabbitmq.step5
+package boki.hellorabbitmq.step6
 
 import org.springframework.stereotype.Component
 
@@ -13,19 +13,21 @@ class CustomExceptionHandler(
         var routingKey: String? = null
 
         routingKey = if (e is NullPointerException) {
-            "error"
+            "log.error"
         } else if (e is IllegalArgumentException) {
-            "warn"
+            "log.warn"
         } else {
-            "error"
+            "log.error"
         }
+
+        println("routingKey = ${routingKey}")
 
         logPublisher.publish(routingKey, "Exception occurred: $message")
     }
 
     // Message
     fun handleMessage(message: String) {
-        val routingKey = "info"
+        val routingKey = "log.info"
         logPublisher.publish(routingKey, "Info Log: $message")
     }
 

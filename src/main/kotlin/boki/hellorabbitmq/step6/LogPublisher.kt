@@ -1,4 +1,4 @@
-package boki.hellorabbitmq.step5
+package boki.hellorabbitmq.step6
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate
 import org.springframework.stereotype.Component
@@ -9,7 +9,7 @@ class LogPublisher(
 ) {
 
     fun publish(routingKey: String, message: String) {
-        rabbitTemplate.convertAndSend(RabbitMQConfig.DIRECT_EXCHANGE, routingKey, message)
+        rabbitTemplate.convertAndSend(RabbitMQConfig.TOPIC_EXCHANGE, routingKey, message)
         println("message published: $routingKey - $message")
     }
 
