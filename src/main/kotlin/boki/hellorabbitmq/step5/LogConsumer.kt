@@ -7,17 +7,17 @@ import org.springframework.stereotype.Component
 class LogConsumer {
 
     @RabbitListener(queues = [RabbitMQConfig.ERROR_QUEUE])
-    fun consumerError(message: String) {
+    fun consumeError(message: String) {
         println("[ERROR] received: $message")
     }
 
     @RabbitListener(queues = [RabbitMQConfig.WARN_QUEUE])
-    fun consumerWarn(message: String) {
+    fun consumeWarn(message: String) {
         println("[WARN] received: $message")
     }
 
     @RabbitListener(queues = [RabbitMQConfig.INFO_QUEUE])
-    fun consumerInfo(message: String) {
+    fun consumeInfo(message: String) {
         println("[INFO] received: $message")
     }
 
