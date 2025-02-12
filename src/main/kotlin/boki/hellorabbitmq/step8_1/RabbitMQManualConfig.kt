@@ -1,4 +1,4 @@
-package boki.hellorabbitmq.step8
+package boki.hellorabbitmq.step8_1
 
 import org.springframework.amqp.core.AcknowledgeMode
 import org.springframework.amqp.rabbit.annotation.EnableRabbit

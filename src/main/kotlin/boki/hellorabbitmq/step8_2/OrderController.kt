@@ -1,4 +1,4 @@
-package boki.hellorabbitmq.step9
+package boki.hellorabbitmq.step8_2
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping

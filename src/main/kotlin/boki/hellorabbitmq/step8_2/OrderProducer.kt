@@ -1,4 +1,4 @@
-package boki.hellorabbitmq.step9
+package boki.hellorabbitmq.step8_2
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate
 import org.springframework.stereotype.Component

@@ -1,4 +1,4 @@
-package boki.hellorabbitmq.step8
+package boki.hellorabbitmq.step8_1
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
