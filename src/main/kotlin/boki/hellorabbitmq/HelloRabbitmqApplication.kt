@@ -13,8 +13,9 @@ const val step6 = "${prefix}.step6" // Routing 모델-Topic Exchange Log 수집
 const val step7 = "${prefix}.step7" // DLX와 DLQ를 이용한 재처리 (manual 모드 세팅)
 const val step8_1 = "${prefix}.step8_1" // RetryTemplate을 사용한 DeadLetter 재처리
 const val step8_2 = "${prefix}.step8_2" // Retry(yaml) 설정을 통한 DeadLetter 재처리
+const val step9 = "${prefix}.step9" // DB 연동 메시지큐의 트랜잭션 처리 실습(일종의 동기방식)
 
-@SpringBootApplication(scanBasePackages = [step8_2])
+@SpringBootApplication(scanBasePackages = [step9])
 class HelloRabbitmqApplication
 
 fun main(args: Array<String>) {

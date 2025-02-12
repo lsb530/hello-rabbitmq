@@ -12,4 +12,5 @@ spring:
       password: guest
   profiles:
     include:
-      - 'step8_2'
+#      - 'step8_2'
+      - 'step9'
