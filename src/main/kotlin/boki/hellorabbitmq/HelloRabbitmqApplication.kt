@@ -10,8 +10,9 @@ const val step3 = "${prefix}.step3" // Pub/Sub 모델을 이용한 실시간 알
 const val step4 = "${prefix}.step4" // 뉴스타입별 구독 알림 시스템
 const val step5 = "${prefix}.step5" // Routing 모델-Direct Exchange Log 수집
 const val step6 = "${prefix}.step6" // Routing 모델-Topic Exchange Log 수집
+const val step7 = "${prefix}.step7" // DLX와 DLQ를 이용한 재처리 (manual 모드 세팅)
 
-@SpringBootApplication(scanBasePackages = [step6])
+@SpringBootApplication(scanBasePackages = [step7])
 class HelloRabbitmqApplication
 
 fun main(args: Array<String>) {
