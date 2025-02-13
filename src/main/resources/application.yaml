@@ -13,4 +13,5 @@ spring:
   profiles:
     include:
 #      - 'step8_2'
-      - 'step9'
+#      - 'step9'
+      - 'step10'
